@@ -1,0 +1,258 @@
+@import 'normalize'
+@import 'utilities'
+
+	
+.NavLog
+	padding 1em 0em
+	margin 0 auto
+
+.Social-listSmall, .Social-listBig
+	list-style none
+	padding .5em 0
+	margin-bottom 0
+	li
+		display inline-block
+		a
+			color gris-oscuro
+			text-decoration none
+			padding 0 .2em
+
+.Social-listSmall
+	display none
+	li
+		a
+			font-size 2em
+
+.Social-listBig
+	li
+		a
+			font-size 3em
+
+.MainSection
+	background-image url(../img/ramo-naturales.jpg)
+	background-position center
+	background-repeat no-repeat
+	background-size cover
+
+.MainArticle
+	margin-bottom 6em
+	margin-top 3em
+
+.MainTitle
+	font-size 3em
+	margin 0
+	line-height 1
+	text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+
+.MainDescription
+	margin-bottom 3em
+
+.MainButton
+	font-size 1.5em
+	color white
+	text-decoration none
+	border 3px solid white
+	padding .8em 1.8em
+	border-radius .3em
+	background rosa
+	&:hover
+		-webkit-transition .3s
+		background rosa-oscuro
+		color white
+		text-decoration none
+
+.FeatureIntro
+	margin-bottom 3em
+
+.FeaturesImg
+	border-radius 50%
+	
+.ConfidenceSection
+	background-image url(../img/tocado.jpg)
+	background-position center
+	background-repeat no-repeat
+	background-size cover
+
+
+.ConfidenceTitle
+	color gris-oscuro
+	margin-bottom 0
+
+.EtsySectionText
+	text-align center
+
+.EtsyImg
+	max-width 200px
+
+.ContactSection
+	background-image url(../img/form.jpg)
+	background-position center
+	background-repeat no-repeat
+	background-size cover
+	color white
+	padding 2em 0
+
+.ContactTitle
+	color white
+
+
+.SadakoSection
+	margin-top 2em
+	margin-bottom 2em
+
+.Inputs
+	color gris-oscuro
+	border none
+	border-radius .4em
+	background rosa-claro
+	height 3em
+	margin .5em 0
+	padding .5em .8em
+	width 100%
+	outline white
+	&:focus
+		background white
+
+.InputsTextarea
+	height 10em
+
+::-webkit-input-placeholder {
+	font-style italic
+}
+
+:-moz-placeholder { /* Firefox 18- */
+  	 font-style italic  	 
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   font-style italic 
+}
+
+:-ms-input-placeholder {  
+   font-style italic 
+}
+
+.FormButton
+	background transparent
+	color white
+	border 2px solid white
+	font-size 1.5em
+	padding .5em 1em
+	&:hover
+		-webkit-transition .5s
+		background white
+		border 2px solid white
+		color rosa
+
+.LegalText, .LegalLink
+	color white
+
+.LegalLink
+	color white
+	text-decoration underline
+	&:hover
+		color rosa-claro
+	
+.SadakoLogo
+	min-width: 250px;
+
+footer
+	position relative
+	background rosa
+	color white
+	padding 2em 0
+
+.FooterText
+	p
+	font-size .8em
+	a
+		color white
+		&:hover
+			color white
+
+.AnchoreUp
+	font-size 4em
+	a
+		color white
+		opacity .6
+		&:hover
+			-webkit-transition .3s
+			text-decoration none
+			opacity 1
+
+@media only screen and (min-width: 40.063em) {
+  	.EtsySectionText {
+  		text-align left 
+  	}
+  	.Social-listSmall {
+		display block
+  	}
+  	.MainTitle {
+  		font-size 3.5em
+  	}
+	
+		
+	
+}
+
+
+
+@font-face {
+	font-family: 'icomoon';
+	src:url('../fonts/icomoon.eot?z13m3n');
+	src:url('../fonts/icomoon.eot?#iefixz13m3n') format('embedded-opentype'),
+		url('../fonts/icomoon.woff?z13m3n') format('woff'),
+		url('../fonts/icomoon.ttf?z13m3n') format('truetype'),
+		url('../fonts/icomoon.svg?z13m3n#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrow-up
+	&:before
+		content: "\e606"
+
+.icon-googleplus:before 
+	content: "\e601";
+
+.icon-facebook
+	&:before
+		content "\e602"
+	&:hover 
+		-webkit-transition .3s
+		color #3b5998
+
+.icon-instagram
+	&:before 
+		content: "\e603"
+	&:hover
+		-webkit-transition .3s
+		color #517fa4
+
+.icon-twitter
+	&:before 
+		content: "\e604"
+	&:hover
+		-webkit-transition .3s
+		color #00aced
+
+.icon-pinterest 
+	&:before 
+		content: "\e605"
+	&:hover
+		-webkit-transition .3s
+		color #cb2027
