@@ -45,7 +45,7 @@ function Autoresponder($user, $mail)
 function NewContact($user, $mail, $comment, $legal)
 {
 	// Mail al owner de la pagina
-	$destination = "lasgrullasdesadako@gmail.com";
+	$destination = "alexgasol@gmail.com";
 	$subject = "Nuevo contacto de lasgrullasdesadako.com";
 	$message = "Tienes un nuevo contacto en la página web lasgrullasdesadako.com " . "\r\n" .
 				"/ <strong>Nombre:</strong> " . $user . "\r\n" .
